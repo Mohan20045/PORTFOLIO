@@ -37,12 +37,20 @@
       background-color: white;
       color: black;
     }
-    .profile{
-      border-radius: 20px;
-      background-color: #4c36a4;
+    .home-heading{
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .image{
-        height: 220px;
+        height: 200px;
+        border-radius: 15px;
+    }
+    .image:hover{
+      height: 220px;
+      transition-duration: 1s;
+      box-shadow: 12px 12px 8px rgba(0, 0, 255, 0.5);
+      margin-bottom: 15px;
     }
     .project-heading{
     font-size: 28px;
@@ -105,6 +113,11 @@
         background-color: #4c36a4;
         border-radius: 50px;
         padding: 0px;
+    }
+    .image{
+        height: 200px;
+        border-radius: 15px;
+        margin-left: 100px;
     }
 }
 .skill_list{
@@ -190,15 +203,21 @@
   </nav>
 
   <!--section for home-->
-  <section id="home" class="py-5 text-center mt-5">
-    <div class="container d-flex">
-        <div>
-            <h1 style="font-weight: 900;">I'm <span style="color: #3e2c85;">Mohan Chandu</span><br>Frontend Developer</h1>
+  <section id="home" class="pt-5 text-center mt-5">
+    <div class="container">
+      <div class="row">
+          <div class="profile col-12 col-md-3 mb-2">
+              <img src="https://imagetolink.com/ib/VFdWWx9ODV.jpg" alt="My Photo" class="image" height="100px">
+          </div>
+          <div class="col-12 col-md-8 home-heading">
+              <h2 style="font-weight: 900;">I'm <span style="color: #3e2c85;">Mohan Chandu</span><br>Frontend Developer</h2>
+          </div>
+          <div class="ml-3 mr-3">
             <p>Greetings! I'm Mohan Chandu, a frontend developer with a passion for crafting captivating digital experiences. Through the fusion of HTML, CSS, Bootstrap and JavaScript, I've meticulously curated my portfolio website to showcase my expertise in frontend development. Dive into my world of code and creativity as I unveil a collection of projects that demonstrate my commitment to user-centric design and seamless functionality. Join me on this journey as we explore the endless possibilities of frontend development together. Welcome to my corner of the digital realm!</p>
-        </div>
-        <div class="profile ml-md-1 ml-lg-3">
-            <img src="https://m.media-amazon.com/images/I/41r0oAaPp0L._AC_UF1000,1000_QL80_.jpg" alt="My Photo" class="image d-none d-lg-block ml-lg-4" height="100px" width="200px">
-        </div>
+          </div>
+      </div>
+      
+        
     </div>
   </section>
 
@@ -335,7 +354,7 @@
           <div class="col-12 col-md-12 col-lg-8" >
             <div class="d-sm-flex">
               <div class="col-12 col-sm-6 col-lg-5 skill_list mr-4">
-                <h4 class="pt-2">Front-end web development</h4>
+                <h4 class="pt-2 mb-3 mt-2">Front-end web development</h4>
                 <img src="https://t3.ftcdn.net/jpg/05/31/71/02/360_F_531710260_ByieqNe7Ut6QBHgIR7xgdsxH7gICrHr1.jpg" alt="web developmen logo" class="w-100 project-image mb-3">
               </div>
               <div class="col-12 col-sm-6 col-lg-5 skill_list mt-3 mt-lg-0">
